@@ -735,6 +735,9 @@ main .learn .image img{
         main .contact h2{
           max-width: 100%;
         }
+        footer .footer{
+            max-width:100%;
+        }
          }
          
     @media only screen and (max-width: 500px) {
@@ -861,5 +864,8 @@ main .learn .image img{
         }
         main .contact h2{
           max-width: 100%;
+        }
+         footer .footer{
+            max-width:100%;
         }
          }
