@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo-01.png" type="image/x-icon">
+    <script type="text/javascript">
+        var txt=" Materi Javascript Dasar ";
+        var kecepatan=500;
+        var segarkan=null;
+        function bergerak() {
+        document.title=txt;
+        txt=txt.substring(1,txt.length)+txt.charAt(0);
+        segarkan=setTimeout("bergerak()",kecepatan);
+        }
+        bergerak();
+       </script>
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="images/Logo-01.png" alt="Javascript">
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#1">Learn Javascript</a></li>
+                <li><a href="#2">Quiz</a></li>
+                <li><a href="#3">About Us</a></li>
+            </ul>
+        </nav>
+   </header>
+   <main>
+    <div class="content">
+        <article>
+        <div class="content-description">
+            <h1 class="title">Apa itu Javascript ?</h1>
+            <p>Javascript adalah bahasa pemograman yang awalnya dirancang untuk berjalan 
+                diatas browser namun, seiiring perkembangan zaman, javascript tidak hanya 
+                berjalan diatas browser saja. Javascript juga dapat digunakan dalam sisi 
+                server, Game Iot, Dekstop, dan masih banyak lagi.</p>
+             <a target="_blank" href="https://22753107.blogspot.com"><button>Klik untuk info lebih lanjut</button></a>
+        </div>
+        </article>
+        <div class="content-image">
+            <img src="images/Logo-01.png" alt="Javascript">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <article>
+    <div class="learn" id="1">
+        <h2>Javascript</h2>
+    <br>
+    <div class="learn-image">
+        <img src="images/js.png" alt="javascript">
+    </div>
+    <div class="learn-description">
+    <section>
+        <h1 class="title"> Sejarah Javascript </h1>
+        <p>
+            Javascript awalnya bernama Mocha, lalu berubah menjadi LiveScript saat browser Netscape 
+            Navigator 2.0 rilis versi beta (September 1995). Namun, setelah itu dinamai ulang menjadi 
+            Javascript. Terinspirasi dari kesuksesan Javascript, Microsoft mengadopsi teknologi serupa. 
+            Microsoft membuat 'Javascript' versi mereka sendiri bernama JScript. Lalu ditanam pada internet 
+            Explorer 3.0. Hal ini mengakibatkan 'Perang Browser' karena JScript milik Microsoft berbeda dengan 
+            Javascript racikan Netscape. Akhirnya pada tahun 1996, Netscape mengirimkan standarisasi ECMA-262 
+            ke Ecma International. Sehingga lahirlah standarisasi kode Javascript bernama ECMAScript atau ES.
+            ECMAScript, atau secara formal disebut ECMAScript -262. 1 tahun berikutnya, badan standarisasi ISO 
+            (International Organization for Standardization) juga mengadopsi ECMAScript sebagai standar. Sejak saat itu, 
+            semua web browser menjadikan ECMAScript sebagai standar acuan untuk JavaScript.ECMAScript terus dikembangkan hingga 
+            saat ini ECMAScript sudah mencapai versi 12 (ES12), berikut perkembangan ECMAScript menurut versi dan tahunnya
+        </p>
+    <div class="image">
+        <img src="images/Versi ECMAScript.png" alt="Versi ECMAScript">
+    </div>
+    </section>
+    <section>
+        <h1 class="title"> Apa Saja Peralatan yang Diperlukan untuk Belajar Javascript  ? </h1>
+        <p>
+            Peralatan yang kita perlukan untuk belajar Javascript untuk pemula tidak lah banyak yaitu Web Browser 
+            (Google Chrome, Firefox, Opera, dll ) dan Teks Editor (VS Code, Sublime Text, Notepad, dll)
+            <br>
+            <b>Console Javascript terdapat pada Browser</b> , bisa kita akses dengan mudah dengan cara:
+            <ul>
+                <li>
+                    Console Javascript terdapat pada Browser , bisa kita akses dengan mudah dengan cara:
+                    Pertama buka Web Browser (disini saya menggunakan google Chrome sebagai contoh) lalu 
+                    klik tanda titik tiga dipojok kanan atas > Pilih More Tools.
+                    <br><br>
+                    <div class="step-console">
+                        <img src="images/step1.png" alt="Step 1">
+                    </div>
+                </li>
+                <br><br><br>
+                <li>
+                    Selanjutnya pilih Developer Tools atau bisa dengan menekan Ctrl + Shift + l
+                    <br><br>
+                    <div class="step-console">
+                        <img src="images/step2.png" alt="Step 2">
+                    </div>
+                </li>
+                <li>
+                    Dan seperti ini tampilan Console Javascript pada Google Chrome.
+                    <br><br>
+                    <div class="step-console">
+                        <img src="images/step3.png" alt="Step 3">
+                    </div>
+                </li>
+                <br><br>
+                <li>
+                    Selanjutnya, kita bisa menulis fungsi atau kode-kode Javascript dan hasilnya akan langsung 
+                    ditampilkan pada console contohnya bisa dilihat dibawah ini.
+                    <br><br>
+                    <div class="step-console">
+                        <img src="images/step4.png" alt="Step 4">
+                    </div>
+                </li>
+            </ul>
+            <p>
+            Pada console diatas bisa dilihat ada kode console.log("Hi apa kabar!"); yang                                             berfungsi untuk menampilkan tulisan  Hi apa kabar ! pada console dan kode alert
+            ("Saya sedang belajar Javascript"); berfungsi untuk menampilkan tulisan
+            Saya sedang belajar Javascript dalam bentuk pesan pop up dibagian halaman 
+            browser kita Setelah mencoba Console Javascript, maka dapat kita simpulkan 
+            bahwa Console bisa digunakan untuk menguji coba fungsi atau kode Javascript 
+            dan Console juga dapat kita gunakan untuk melihat pesan error saat debugging program.
+            </p>   
+        </p>
+    </section>
+    <section>
+        <h1 class="title"> Cara Penulisan Kode Javascript </h1>
+        <p>
+            Ada Empat cara penulisan kode javascript yaitu :
+        </p>
+        <ol>
+            <li>
+                Penulisan Javascript pada tag script
+                <br> Penulisan kode Javascript 
+                menggunakan tag script atau disebut dengan embed adalah cara umum yang digunakan.
+                Tag script dapat kita buat di dalam tag head maupun body.
+                Contoh:
+                <br><br>
+                <div class="penulisan-js">
+                    <img src="images/cara1.png" alt="Cara 1">
+                </div>  
+            </li>
+            <br>
+            <li>
+                Penulisan Javascript pada File Eksternal
+                <br>Cara kedua, kita bisa menulis Javascript di File yang terpisah dengan HTML.Biasanya 
+                digunakan jika kita tidak ingin kode Javascript bercampur dengan kode HTML.
+                <br><br>
+                <div class="penulisan-js">
+                    <img src="images/cara2.png" alt="Cara 2">
+                </div> 
+            </li>
+            <br>
+            <li>
+                Penulisan Javascript pada atribut
+                <br>Penulisan Javascript pada atribut biasanya dilakukan pada atribut event.
+                <br>Contoh:
+                <br><br>
+                <div class="penulisan-js">
+                    <img src="images/cara3.png" alt="Cara 3">
+                </div>
+            </li>
+            <br>
+            <li>
+                Penulisan Javascript pada URL
+                <br>Nah ini yang menurut saya cara yang cukup aneh.Cara ini memang jarang digunakan 
+                dan hampir tidak ada yang menggunakannya di dalam aplikasi.Tapi tetap bisa.Caranya, 
+                pada URL kita gunakan javascript: lalu diikuti dengan kode Javascript yang ingin dieksekusi.
+                <br><br>
+            </li>
+        </ol>
+    </section>
+    <section>
+        <h1 class="title"> Cara Menampilkan Output Pada JavaScript </h1>
+        <p>
+            Output adalah sebuah tampilan program yang biasanya digunakan untuk memperlihatkan hasil akhir. 
+            Dalam Javascript ada 4 cara menampilkan output yaitu fungsi console.log(), fungsi alert(), fungsi 
+            document.write(), dan fungsi innerHTML namun dari keempat fungsi tersebut memiliki perbedaan disetiap 
+            fungsinya berikut adalah penjelasannya :
+        </p>
+        <ol>
+            <li>
+                Fungsi console.log()
+                <br>Fungsi console.log() adalah fungsi untuk menampilkan teks ke console Javascript.
+                Fungsi console.log() biasanya digunakan untuk debugging. Karena setiap pesan error di Javascript 
+                selalu ditampilkan di dalam Console. Selain console.log(), terdapat juga beberapa fungsi untuk debugging 
+                seperti console.debug(), console.info(), console.error(), console.dir(), dsb.
+                Berikut adalah contoh output nya :
+                <div class="output">
+                    <img src="images/output1.png" alt="Output Console-log">
+                </div>
+            </li>
+            <br>
+            <li>
+                Fungsi alert()
+                <br>Fungsi alert() adalah fungsi untuk menampilkan jendela dialog. Fungsi sebenarnya berada pada objek window.  
+                Berikut contoh output nya :              
+                <div class="output">
+                    <img src="images/output2.png" alt="Output alert()">
+                </div>
+            </li>
+            <br>
+            <li>
+                Fungsi write()
+                <br>Objek document adalah objek yang mewakili dokumen HTML di dalam Javascript. Dalam objek document, terdapat 
+                fungsi write() untuk menulis sesuatu ke dokumen HTML.Berikut contoh outputnya :
+                <div class="output">
+                    <img src="images/output3.png" alt="Output write()">
+                </div>
+            </li>
+            <br>
+            <li>
+                Fungsi innerHTML
+                <br>innerHTML adalah sebuah atribut di dalam (objek) elemen HTML yang berisi string HTML, dengan innerHTML, 
+                kita dapat menampilkan output ke elemen yang lebih spesifik.Berikut contoh penulisannya :
+                <div class="output">
+                    <img src="images/output4.png" alt="Penulisan inner-HTML">
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section>
+        <h1 class="title"> Memahami Variable dan Tipe Data dalam Javascript</h1>
+        <ol type="A">
+            <li>
+                <p>
+                Variable <br>
+                Variable adalah sebuah nama yang mewakili sebuah nilai. Variable bisa diisi dengan berbagai macam nilai seperti string 
+                (teks), number (angka), objek, array, dan sebagainya. Kita bisa ibaratkan, Variable itu seperti wadah untuk menyimpan sesuatu.
+                Aturan Penulisan Variable.
+                Ada beberapa aturan penulisan variabel dalam Javascript:
+                <ul style="list-style-type:disc">
+                <li>Penamaan variabel tidak boleh menggunakan angka di depannya.</li>
+                <li>Penamaan variabel boleh menggunakan awal underscore.</li>
+                <li>Penamaan variabel dianjurkan menggunakan camelCase apabila terdiri dari dua suku kata (contoh : var fullName = “Vivi Apriliani”);</li>
+                <li>Penamaan variabel dianjurkan menggunkan bahasa inggris.</li>
+                </ul>
+                </p>
+
+            </li>
+            <li>
+                <p>
+                    Tipe Data <br>
+                    Tipe data adalah jenis-jenis data yang bisa kita simpan di dalam variabel. Ada beberapa tipe data dalam pemrograman Javascript:
+                    <ul style="list-style-type:disc">
+                    	<li>String (teks)</li>
+                     	<li>Integer atau Number (bilangan bulat)</li>
+                     	<li>Float (bilangan Pecahan)</li>
+                     	<li>Boolean</li>
+                     	<li>Object</li>
+                    </ul>
+                    <p>Javascript adalah bahasa yang bersifat dynamic typing, artinya kita tidak harus menuliskan tipe data pada saat pembuatan variabel 
+                    seperti pada bahasa C, C++, Java, dsb. yang bersifat static typing. Javascript akan otomatis mengenali tipe data yang kita berikan pada variabel. 
+                    Hal ini bisa juga kita cek dengan kata kunci typeof.
+                    </p>
+            </li>
+        </ol>
+    </section>
+    <section>
+        <h1 class="title"> 3 Macam Jendela Dialog pada Javascript</h1>
+        <p>
+        Jendela dialog merupakan jendela yang digunakan untuk berinteraksi dengan pengguna.Ada tiga macam jendela dialog pada Javascript: Jendela dialog alert(),
+        Jendela dialog confirm(), Jendela dialog promp(); Ketiga dialog ini memiliki fungsi dan manfaat yang berbeda-beda, mari kita bahas :
+        <ol>
+            <li>
+                Jendela Dialog Alert() <br>
+                Dialog alert() biasanya digunakan untuk menampilkan sebuah pesan peringatan atau informasi. Fungsi alert() berada dalam objek window.Karena objek window 
+                berisfat global, kita boleh tidak menulisnya. Dialog alert() tidak akan mengembalikan nilai apa-apa saat dieksekusi.
+                Dialog alert() memiliki satu perameter yang harus diberikan, yaitu: teks yang akan ditampilkan pada dialog. Pertanyaanya: Bagaimana cara menampilkan dialog alert() pada event tertentu, misalnya saat sebuah tombol diklik 
+                Ini bisa kita lakukan dengan menambahkan fungsi dialog pada event listener. Pada HTML, kita bisa masukan fungsi alert() pada atribut onClick agar nanti ditampilkan saat sebuah elemen diklik.
+            </li>
+            <br>
+            <div class="dialog">
+                <img src="images/dialog1.png" alt="Dialog alert()">
+            </div>
+            <li>
+                Jendela Dialog confirm() <br>
+                Dialog confirm() digunakan untuk melakukan konfirmasi dalam melakukan tindakan tertentu. Misalnya: Saat kita menghapus sesuatu, maka ada baiknya menampilkan dialog confirm(). Karena tindakan tersebut cukup 
+                berbahaya. Dialog confirm dapat dibuat dengan fungsi confirm(). Dialog confirm() akan mengembalikan nilai true apabila kita memilih tombol OK dan akan mengembalikan nilai false apabila kita memilih Cancel.Nilai kembalian ini dapat kita tampung dalam variabel untuk diproses.
+            </li>
+            <br>
+            <div class="dialog">
+                <img src="images/dialog2.png" alt="Dialog confirm()">
+            </div>
+            <li>
+                Jendela Dialog Prompt() <br>
+                Dialog prompt() berfungsi untuk mengambil sebuah inputan dari pengguna. Dialog prompt() akan mengembalikan sebuah nilai string dari apa yang diinputkan oleh pengguna.
+                Dialog prompt() memiliki beberapa parameter yang harus diberikan:
+                <ol>
+                    <li>Teks yang akan ditampilkan pada form.</li>
+                    <li>Nilai default untuk field input.</li>
+                </ol>
+            </li>
+            <div class="dialog-prompt">
+                <img src="images/dialog3.png" alt="Dialog prompt()">
+            </div>
+        </ol>
+        </p>
+    </section>
+    <section>
+        <h1 class="title"> Enam Jenis Operator yang Wajib Diketahui</h1>
+        <p>
+        Operator adalah simbol yang digunakan untuk melakukan operasi pada suatu nilai dan variabel.Operator dalam pemrograman terbagi dalam 6 jenis:
+        <ol>
+            <li>
+                Operator aritmatika <br>
+                Operator aritmatika merupakan operator untuk melakukan operasi aritmatika seperti penjumlahan, pengurangan, pembagian, perkalian, dsb.
+                Berikut contoh penggunaannya:
+                <div class="operator">
+                    <img src="images/operator1.png" alt="">
+                </div>
+            </li>
+            <br>
+            <li>
+                Operator Penugasan (Assignment) <br>
+                Operator penugasan adalah operator yang digunakan untuk memberikan tugas kepada variabel. Biasanya digunakan untuk mengisi variabel.
+                Apa bedanya dengan operator penugasan dengan operator aritmatika?
+                Operator aritmatika hanya melakukan operasi aritmatika saja, sedangkan operator penugasan… ia melakukan operasi aritmatika dan juga pengisian.
+                Berikut contoh penggunaannya: 
+                <div class="operator-3">
+                    <img src="images/operator2.png" alt="">
+                </div>
+            </li>
+            <br>
+            <li>
+                Operator relasi atau perbandingan <br>
+                Operator relasi atau perbandingan adalah operator yang digunakan untuk membandingkan dua nilai.Operator perbandingan akan menghasilkan sebuah nilai boolean true dan false.
+                Berikut contoh penggunaannya:
+                <div class="operator-2">
+                    <img src="images/operator3.png" alt="">
+                </div>
+            </li>
+            <br>
+            <li>
+                Operator Logika <br>
+                Operator logika digunakan untuk melakukan operasi terhadap dua nilai boolean.
+                Berikut contoh penggunaannya:
+                <div class="operator-2">
+                    <img src="images/operator4.png" alt="">
+                </div>
+            </li>
+            <br>
+            <li>
+                Operator Bitwise <br>
+                Operator bitwise merupkan operator yang digunakan untuk operasi berdasarkan bit (biner), operator ini berlaku untuk tipe data int, long, short, char, dan byte. Operator ini akan menghitung dari bit ke bit.
+                Konsepnya memang hampir sama dengan opeartor Logika. Bedanya, Bitwise digunakan untuk biner.
+                Berikut contoh penggunaannya:
+                <div class="operator-2">
+                    <img src="images/operator5.png" alt="">
+                </div>
+            </li>
+            <br>
+            <li>
+                Operator Ternary <br>
+                Operator ternary merupakan operator yang teridiri dari tiga bagian. Operator-operator sebelumnya hanya dua bagian saja, yaitu: bagian kiri dan kanan. Ini disebut operator binary. Sementara operator trinary ada bagian kiri, tengah, dan kanan
+                Opertor ternary pada Javascript, biasanya digunakan untuk membuat sebuah percabangan if/else. Simbol opertor ternary terdiri dari tanda tanya dan titik dua (?:).Perhatikan! <kondisi> dapat kita isi dengan ekspresi yang menghasilkan nilai 
+                true dan false. Apabila kondisi bernilai true, maka "benar" yang akan dipilih dan sebaliknya—apabila false—maka "salah" yang akan dipilih.
+                Berikut contoh penggunaannya:
+                <div class="operator">
+                    <img src="images/operator6.png" alt="">
+                </div>
+            </li>
+    </ol>
+        </p>
+    </section>
+    <section>
+        <h1 class="title"> Memahami 6 Bentuk Percabangan pada Javascript </h1>
+        <p>
+            Percabangan adalah cara yang digunakan dalam program untuk mengambil keputusan ke satu kemungkinan True atau False dari beberapa kondisi. Selain percabangan, struktur ini juga disebut : Control Flow, Decision, struktur kondisi, struktur if, 
+            dsb. Percabangan akan mapu membuat program berpikir dan menentukan Tindakan sesuai dengan logika/kondisi yang kita berikan. 
+            <ol>
+                <li>
+                    Percabangan if <br>
+                    Percabangan if merupakan percabangan yang hanya memiliki satu blok pilihan saat kondisi bernilai benar.
+                    Berikut contoh penggunaannya :
+                    <div class="percabangan">
+                        <img src="images/if.jpg" alt="percabangan if">
+                    </div>
+                </li>
+                <br>
+                <li>
+                    Percabangan if/else <br> 
+                    Percabangan if/else merupakan percabangan yang memiliki dua blok pilihan. Pilihan pertama untuk kondisi benar, dan pilihan kedua untuk kondisi salah (else). 
+                    Berikut contoh penggunaannya :
+                    <div class="percabangan">
+                        <img src="images/if else.jpg" alt="Percabangan if/else">
+                    </div>
+                </li>
+                <br>
+                <li>
+                    Percabangan if/else/if <br>
+                    Percabangan if/else/if merupakan percabangan yang memiliki lebih dari dua blok pilihan
+                    Berikut contoh penggunaannya :
+                    <div class="percabangan">
+                        <img src="images/ifelseif.jpg" alt="Percabangan if/else/if">
+                    </div>
+                </li>
+                <br>
+                <li>
+                    Percabangan switch/case <br>
+ 	                Percabangan switch/case adalah bentuk lain dari percabangan if/else/if.
+                     Kita dapat mermbuat blok kode (case) sebanyak yang diinginkan di dalam blok switch. Pada <value>, kita bisa isi dengan nilai yang nanti akan dibandingkan dengan varabel. Setiap case harus diakhiri dengan break. Khusus untuk default, 
+                    tidak perlu diakhiri dengan break karena dia terletak di bagian akhir. Pemberian break bertujuan agar program berhenti mengecek  
+                    Berikut contoh penggunaannya :
+                    <div class="percabangan">
+                        <img src="images/switch case.jpg" alt="Percabangan Switch-Case">
+                    </div>
+                </li>
+                <br>
+                <li>
+                    Percabangan dengan Operator Ternary <br>
+                    Percabangan menggunakan opreator ternary merupakan bentuk lain dari percabangan if/else. Bisa dibilang: bentuk singkatnya dari if/else.
+                    Operator ternary berperan sebagai percabangan if/else.
+                    Berikut contoh penggunaannya :
+                    <div class="percabangan">
+                        <img src="images/ternary.jpg" alt="Percabangan dengan Operatot Ternary">
+                    </div>
+                </li>
+                <br>
+                <li>
+                    Percabangan Bersarang(Nested) <br>
+ 	                Kita juga dapat membuat blok percabangan di dalam percabangan. Ini disebut percabangan bersarng atau nested if. 
+                     Berikut contoh penggunaannya :
+                     <div class="percabangan">
+                         <img src="images/if else.jpg" alt="Percabangan Bersarang">
+                     </div>
+                </li>
+            </ol>
+        </p>
+    </section>
+    <section>
+        <h1 class="title">Mengenal 5 Macam Bentuk Perulangan pada Javascript</h1>
+        <p>
+            Perulangan adalah proses mengulang-ulang eksekusi blok kode tanpa henti, selama kondisi yang dijadikan acuan terpenuhi. 
+            Secara umum, perulangan dibagi dua yaitu :Counted Loop dan Uncounted Loop 
+            <ol>
+                <li>Perulangan yang termasuk dalam Counted Loop :</li>
+                <ul>
+                    <li>Perulangan For <br>
+                            Perulangan for merupakan perulangan yang termasuk dalam couted loop, karena sudah jelas berapa kali ia akan mengulang. 
+                            Berikut contoh penulisan kode nya :
+                            <div class="perulangan">
+                                <img src="images/for.jpg" alt="Perulangan For">
+                            </div>
+                        </p>
+                    </li>
+                    <li>Perulangan Foreach <br>
+                        Perulangan foreach biasanya digunakan untuk mencetak item di dalam array. Perulangan ini termasuk dalam perulangan counted loop, karena jumlah perulangannya akan dituentukan oleh panjang dari array. 
+                        Ada dua cara menggunakan perulangan foreach di Javascript:
+                        <ul>
+                            <li>Menggunakan for dengan operator in.</li>
+                            <li>Mengguunakan method forEach().</li>
+                        </ul>
+                        Berikut contoh penulisan kode menggunakan operator in:               	
+                        <div class="perulangan-1">
+                            <img src="images/foreach in.jpg" alt="Perulangan ForEach">
+                        </div>
+                    </li>
+                    <br>
+                    <li>Perulangan Repeat <br>
+                        Perulangan dengen method atau fungsi repeat() termasuk dalam perulangan counted loop. Fungsi ini khusus digunakan untuk mengulang sebuah teks (string). Bisa dibilang: ini merupakan singkat dari perulangan for. 
+                        Berikut contoh penulisan kode nya :
+                        <ul>
+                            <li>Contoh apabila menggunakan perulangan for : 
+                                <div class="perulangan-2">
+                                    <img src="images/repeat for.jpg" alt="Perulangan Repeat for">
+                                </div>
+                            </li>
+                            <li>Contoh apabila menggunakan fungsi repeat() 
+                                <div class="perulangan-3">
+                                    <img src="images/repeat.jpg" alt="Perulangan Repeat">
+                                </div>
+                            </li>
+                        </ul>               	
+                    </li>
+                    <br><br>
+                </ul>
+                <li>Perulangan yang termasuk dalam Uncounted loop :</li>
+                <ul>
+                    <li>Perulangan While <br>
+                        Perulangan while merupakan perulangan yang termasuk dalam perulangan uncounted loop. Perulangan while juga dapat menjadi perulangan yang counted loop dengan memberikan counter di dalamnya. Berikut contoh untuk memahami perulangan ini…
+                        <div class="perulangan-4">
+                            <img src="images/while.jpg" alt="Perulangan While">
+                        </div>
+                        Perulangan while juga dapat menjadi perulangan yang counted loop dengan memberikan counter di dalamnya. 
+                    </li>
+                    <br>
+                    <li>Perulangan Do/While <br>
+                        Perulangan do/while sama seperti perulangan while. Perbedaanya: perulangan do/while akan melakukan perulangan sebanyak 1 kali terlebih dahulu, lalu mengecek kondisi yang ada di dalam kurung while. Bentuknya seperti ini: 
+                        <div class="perulangan-5">
+                            <img src="images/do while.jpg" alt="Perulangan Do/While">
+                        </div>
+                        Jadi perbedaanya: 
+                        Perulangan do/while akan mengecek kondisi di belakang (sesudah mengulang), sedangkan while akan mencek kondisi di depan atau awal (sebelum mengulang).
+                    </li>
+                </ul>
+            </ol>
+        </p>
+    </section>
+    <section>
+        <h1 class="title">Memahami Struktur Data Array pada Javascript</h1>
+        <p>
+            Array adalah kumpulan data yang disimpan dalam satu variable, array dapat diilustrasikan seperti gerbong kereta. Indeks array dapat diilustrasikan sebagai nomor gerbong. Pada javascript, array dapat kita buat dengan tanda kurung siku ([..]). 
+            Kita bisa mengisi data ke dalam array, lalu setiap data dipisah dengan tanda koma (,). karena javascript merupakan bahasa pemrograman yang dynamic typing maka kita bisa menyimpan dan mencampur apapun di dalam array
+            Array akan menyimpan sekumpulan data dan memberinya nomer indeks agar mudah diakses. Indeks array selalu dimulai dari nol 0. 
+            Ada dua cara yang bisa dilakukan untuk menambah data ke dalam array:
+        </p>
+            <ol>
+                <li>Mengisi menggunakan indeks;</li>
+                <li>Mengisi menggunakan method push().</li>
+            </ol>
+        <p>
+            Tapi kekurangan dari cara ini ialah: Kita harus tahu jumlah data atau panjang array-nya, barulah kita bisa menambahkan. Apabila kita memasukan nomer indeks sembarangan, maka nanti yang akan terjadi adalah data yang ada di daalam indeks tersebut akan ditindih.
+            Terdapat beberapa method dalam Array yang perlu kita ketahui:
+            <ol>
+                <li>Method filter() <br>
+                        Method filter() berfungsi untuk menyaring data dari array. Parameter yang harus diberikan pada method filter() sama seperti method forEach(), yaitu: sebuah fungsi callback.
+                        Contoh:
+                        <div class="method-array-1">
+                            <img src="images/filter.png" alt="Method Filter()">
+                        </div>
+                </li>
+                <br>
+                <li>
+                    Method includes() <br>
+                    Method ini berfungsi untuk mengecek apakah sebuah data ada di dalam array atau tidak. Biasanya digunakan untuk melakukan pencarian untuk memastikan data sudah ada di dalam array.
+                    Contoh :
+                    <div class="method-array-2">
+                        <img src="images/includes.png" alt="Method includes()">
+                    </div>
+                </li>
+                <br>
+                <li>
+                    Method sort() <br>
+                    Method sort() berfungsi untuk mengurutkan data pada array.
+                    Contoh :
+                    <div class="method-array-3">
+                        <img src="images/sort.png" alt="Method sort ()">
+                    </div>
+                </li>
+            </ol>
+        </p>
+        </section>
+        <section>
+            <h1 class="title">Apa itu DOM API? dan Bagaimana Cara Menggunakanya?</h1>
+            <p>
+                DOM merupakan singkatan dari Document Object Model. Artinya, dokumen (HTML) yang dimodelkan dalam sebuah objek. Objek dari dokumen ini menyediakan sekumpulan fungsi dan atribut/data yang bisa kita manfaatkan dalam membuat program Javascript. Inilah yang disebut 
+                API (Application Programming Interface). DOM tidak hanya untuk dokumen HTML saja. DOM juga bisa digunakan untuk dokumen XML dan SVG dan DOM juga tidak hanya ada di Javascript saja, DOM juga ada pada bahasa pemrograman lain.
+                Seperti yang kita sudah ketahui, DOM adalah sebuah objek untuk memodelkan dokumen HTML. Objek DOM di javascript bernama document. Objek ini berisi segala hal yang kita butuhkan untuk memanipulasi HTML.Jika kita coba ketik document pada console Javascript, maka yang akan tampil adalah kode HTML.
+                <div class="dom-api-1">
+                    <img src="images/dom1.png" alt="DOM API">
+                </div>
+                <br><br>
+                Di dalam objek document, terdapat fungsi-fungsi dan atribut yang bisa kita gunakan untuk memanipulasi dokumen HTML. Sebagai contoh fungsi documen.write(). Fungsi ini digunakan untuk menulis sesuatu ke dokumen HTML
+                Contoh:
+                Coba ketik kode berikut di dalam console Javascript.
+                <div class="dom-api-2">
+                    <img src="images/dom2.png" alt="DOM API">
+                </div>
+                <br>
+                Hasilnya :
+                <br><br>
+                <div class="dom-api-3">
+                    <img src="images/dom3.png" alt="DOM API">
+                </div>
+                <br>
+                Apabila kita ingin mengakses elemen yang spesifik, terdapat beberapa fungsi yang bisa digunakan:
+                <ul>
+                    <li>getElementById() fungsi untuk memilih elemen berdasarkan atribut id.</li>
+                    <li>getElementByName() fungsi untuk memilih elemen berdasarkan atribut name.</li>
+                    <li>getElementByClassName() fungsi untuk memilih elemen  berdasarkan atribut class.</li>
+                    <li>getElementByTagName() fungsi untuk memilih elemen berdasarkan nama tag.</li>
+                    <li>getElementByTagNameNS() fungsi untuk memilih elemen berdasarkan nama tag.</li>
+                    <li>querySelector() fungsi untuk memilih elemen berdasarkan query.</li>
+                    <li>querySelectorAll() fungsi untuk memilih elemen berdasarkan query.</li>
+                </ul>
+                Fungsi-fungsi di atas cukup sering digunakan untuk mengakses elemen tertentu.
+            </p>
+        </section>
+        <section>
+            <h1 class="title">Memahami Fungsi di Javascript </h1>
+            <p>
+                Fungsi adalah sub-program yang bisa digunakan kembali baik di dalam program itu sendiri, maupun di program yang lain. Fungsi di dalam Javascript adalah sebuah objek. Karena memiliki properti dan juga method. 
+                Ada 4 cara yang bisa kita lakukan untuk membuat fungsi di Javascript:
+                <ol>
+                    <li>Menggunakan cara biasa <br>
+                        Cara ini adalah cara yang paling sering digunakan, terutama buat para pemula
+                        Contoh :
+                        <div class="fungsi-cara-1">
+                            <img src="images/fungsi1.png" alt="">
+                        </div>
+                    </li><br>
+                    <li>
+                        Menggunakan ekspresi <br>
+                        Contoh :
+                        <div class="fungsi-cara-2">
+                            <img src="images/fungsi2.png" alt="">
+                        </div>
+                        Kita menggunakan variabel, lalu diisi dengan fungsi. Fungsi ini sebenarnya adalah fungsi anonim (anonymous function) atau fungsi tanpa nama.
+                    </li><br>
+                    <li>
+                        Menggunakan tanda panah (=>) <br>
+                        Cara ini sering digunakan di kode Javascript masa kini, karena lebih sederhana. Akan tetapi sulit dipahami bagi pemula. Fungsi ini mulai muncul pada standar ES6.
+                        Contoh:
+                        <div class="fungsi-cara-3">
+                            <img src="images/fungsi3.png" alt="">
+                        </div> <br>
+                        Sebenarnya hampir sama dengan yang menggunakan ekspresi. Bedanya, kita menggunakan tanda panah (=>) sebagai ganti function. Pembuatan fungsi dengan cara ini disebut arrow function.
+                    </li><br>
+                    <li>
+                        Menggunakan Constructor <br>
+                        Cara ini sebenarnya tidak direkomendasikan oleh Developer Mozilla, karena terlihat kurang bagus. Soalnya body fungsinya dibuat dalam bentuk string yang dapat mempengaruhi kinerja engine javascript.
+                        Contoh:
+                        <div class="fungsi-cara-4">
+                            <img src="images/fungsi4.png" alt="">
+                        </div> <br>
+                    </li>
+                </ol>
+            </p>
+        </section>
+        <section>
+            <h1 class="title">Apa itu Object ?</h1>
+            <p>
+                Objek adalah segala sesuatu yang ada di dunia ini, entah itu benda mati ataupun makhluk hidup. Semuanya objek. Objek-objek ini dapat kita modelkan di dalam pemrograman. Biasanya menggunakan paradigma OOP 
+                (Object Oriented Programming) atau pemrograman beorientasikan objek. Paradigma OOP ini merupakan sebuah teknik atau cara di dalam pemrograman dimana segala sesuatu di pandang sebagai objek. Objek-objek ini 
+                dapat saling berinteraksi sehingga membentuk sebuah program.Objek sebenarnya adalah sebuah variabel yang menyimpan nilai (properti) dan fungsi (method).
+                Objek pada javascript, dapat dibuat dengan tanda kurung kurawal dengan isi berupa key dan value.
+                Contoh:
+                <div class="object-1">
+                    <img src="images/object1.png" alt="">
+                </div>
+            </p>
+            <p>
+                <b>Perbedaan Properti dan Method </b><br>
+                    Properti adalah ciri khas dari objek (variabel). Sedangkan method adalah perilaku dari objek (fungsi).
+                    Method dapat dibuat dengan cara mengisi nilai (value) dengan sebuah fungsi.
+            </p>
+        </section>
+        <section>
+            <h1 class="title">Mengenal Objek Math untuk Perhitungan Matematika</h1>
+            <p>
+                Objek Math adalah objek yang berisi fungsi-fungsi matematika dan beberapa konstanta untuk melakukan perhitungan matematika seperti sin, cos, tan, eksponen, akar kuadrat, dll.
+                <div class="math-1">
+                    <img src="images/math1.png" alt="">
+                </div><br>
+                Ini adalah fungsi-fungsi yang umum digunakan dalam perhitungan matematis.Mari kita bahas lebih dalam lagi untuk tiap-tiap fungsi tersebut.
+                Pertama kita mulai dari:
+                <ol>
+                    <li>Fungsi Trigonometri <br>
+                        Trigonometri adalah cabang ilmu matematika yang mempelajari tentang sudut dan panjang pada segitiga. di object Math terdapat fungsi-fungsi untuk menghitung trigonometri. Misalkan kita ingin menghitung nilai sin dari 10, maka pada program kita bisa tulis seperti ini:
+                        <div class="fungsi-math-1">
+                            <img src="images/math2.png" alt="">
+                        </div>
+                    </li><br>
+                    <li>
+                        Fungsi Logaritma, Pangkat, dan Eksponensial <br>
+                        Logaritma adalah operasi matematika yang merupakan kebalikan (atau invers) dari eksponen atau pemangkatan. Objek Math di Javascript juga menyediakan fungsi log() untuk logaritma dan pow() untuk pemangkatan.
+                        Berikut merupakan contoh jika kita coba pada console :
+                        <div class="fungsi-math-2">
+                            <img src="images/math3.png" alt="">
+                        </div><br>
+                        Kemudian untuk menghitung eksponensial, kita dapat menggunakan fungsi exp().
+                    </li><br>
+                    <li>
+                        Fungsi Pembulatan <br>
+                        Apabila kita membutuhkan bilangan bulat (integer), kita bisa gungakan fungsi pembulatang di objek Math. Ada beberapa fungsi yang sering digunakan:
+                        <ul>
+                            <li>floor() membulatkan ke bawah;</li>
+                            <li>round() membulatkan ke yang terdekat, bisa ke bawah dan ke atas;</li>
+                            <li>ceil() membulatkan ke atas.</li>
+                        </ul>
+                        Contoh : <br>
+                        <div class="fungsi-math-2">
+                            <img src="images/math4.png" alt="">
+                        </div><br>
+                    </li><br>
+                    <li>
+                        Fungsi Akar <br>
+                        Fungsi akar kuadrat dapat dihitung dengan fungsi sqrt(). Contoh :
+                        <div class="fungsi-math-3">
+                            <img src="images/math5.png" alt="">
+                        </div><br> 
+                        Fungsi akar kubik dapat dihitung dengan fungsi cbrt().
+                        Contoh :
+                        <div class="fungsi-math-2">
+                            <img src="images/math6.png" alt="">
+                        </div><br>
+                    </li><br>
+                    <li>
+                        Fungsi Random <br>
+                        Fungsi random adalah fungsi yang mengahilkan nilai acak antara 0.0 sampai 1.0.
+                        Contoh:
+                        <div class="fungsi-math-3">
+                            <img src="images/math7.png" alt="">
+                        </div><br>  
+                    </li><br>
+                    <li>
+                        Fungsi Mutlak <br>
+                        Fungsi mutlak adalah fungsi yang menghasilkan nilai mutlak atau absolute.
+                        Contoh:
+                        <div class="fungsi-math-1">
+                            <img src="images/math8.png" alt="">
+                        </div><br> 
+                        Variabel x akan bernilai 2, karena fungsi abs() akan selalu memberikan nilai mutlak atau positif.
+                    </li><br>
+                    <li>
+                        Fungsi Minimum dan Maksimum <br>
+                        Fungsi minimum dan maksimum adalah fungsi untuk menentukan nilai paling kecil dan paling besar pada sekumpulan nilai. Fungsi ini bisa kita berikan input berupa urutan bilangan. Apabila kita ingin memberikan input array, maka array tersebut harus kita pecah isinya.
+                        Contoh :
+                        <div class="fungsi-math-2">
+                            <img src="images/math9.png" alt="">
+                        </div><br>
+                        Perhatikan operator ..., ini adalah operator yang ditambahkan pada ES2015 yang berfungsi untuk memecah isi array dan string.
+                    </li>
+                </ol>
+                Selain menyediakan fungsi-fungsi matematika, objek Math juga menyediakan konstanta seperti PI, E, LN10, dll. yang bisa kita manfaatkan untuk perhitungan rumus tertentu.
+                <div class="fungsi-math-2">
+                    <img src="images/math10.png" alt="">
+                </div>
+            </p>
+        </section>
+        <section>
+            <h1 class="title">Apa itu AJAX? dan Bagaimana Cara Menggunakannya?</h1>
+            <P>
+                AJAX merupakan singkatan dari Asynchronous Javascript Aand XML.
+                AJAX berfungsi untuk:
+                <ul style="list-style-type:disc">
+                    <li>Mengambil data dari server secara background;</li>
+                    <li>Update tampilan web tanpa harus relaod browser;</li>
+                    <li>Mengirim data ke server secara background.</li>
+                </ul>
+                Pada dasarnya AJAX hanya menggunakan objek XMLHttpRequest untuk berkomunikasi dengan server. AJAX juga mendukung format JSON, Plain Text, dan HTML.
+            </P>
+            <h3>Cara Menggunakan Ajax di Javascript</h3>
+            <p>
+                Langkah-langkah menggunakan AJAX seperti ini:
+                <ol>
+                    <li>Membuat Objek AJAX
+                        <div class="ajax1">
+                            <img src="images/ajax1.png" alt="">
+                        </div>
+                    </li><br>
+                    <li>
+                        Menentukan Fungsi Handler untuk Event
+                        <div class="ajax2">
+                            <img src="images/ajax2.png" alt="">
+                        </div>
+                    </li><br>
+                    <li>Menentukan Method dan URL
+                        <div class="ajax1">
+                            <img src="images/ajax3.png" alt="">
+                        </div>
+                    </li><br>
+                    <li>
+                        Mengirim Request 
+                        <div class="ajax1">
+                            <img src="images/ajax4.png" alt="">
+                        </div>
+                    </li>
+                </ol>
+            </p>
+            <p>
+                Coba perhatikan kode berikut :
+                <div class="ajax1">
+                    <img src="images/ajax5.png" alt="">
+                </div><br>
+                <ol>
+                    <li>GET adalah metode request yang akan digunakan;</li>
+                    <li>url adalah alamat URL tujuan;</li>
+                    <li>true adalah untuk mengeksekusi AJAX secara asynchronous</li>
+                </ol>
+            </p>
+            <p>
+                Sekarang kita akan melakukan modifikasi pada kode program tadi menjadi seperti ini :
+                <div class="ajax3">
+                    <img src="images/ajax6.png" alt="">
+                </div><br>
+                <div class="ajax4">
+                    <img src="images/ajax7.png" alt="">
+                </div><br>
+                <p>
+                Kode program diatas bertujuan menampilkan/mengambil foto profil pada akun github maka jika dijalankan hasilnya seperti ini :
+                 </p>
+                <div class="ajax5">
+                    <img src="images/ajax8.png" alt="">
+                </div><br>
+            </p>
+            <h3>Mengirim Data ke Server dengan AJAX</h3>
+            <P>
+                Berikut adalah contohnya :
+                <div class="serverajax1">
+                    <img src="images/serverajax.png" alt="">
+                </div><br>
+                <div class="serverajax2">
+                    <img src="images/serverajax2.png" alt="">
+                </div><br>
+                <p>Pengiriman data tersebut hanya untuk simulasi. Data tidak benar-benar akan terkirim ke server https://jsonplaceholder.typicode.com/posts, Jika dijalankan maka hasilnya akan seperti ini :</p>
+                <div class="serverajax1">
+                    <img src="images/serverajax3.png" alt="">
+                </div><br>
+            </P>
+            <h3>AJAX menggunakan JQUERY</h3>
+            <p>
+                JQuery adalah library Javascript yang menyederhanakan fungsi-fungsi Javascript. Pada JQuery, AJAX dapat dibuat seperti ini:
+                <div class="jquery">
+                    <img src="images/jquery.png" alt="">
+                </div><br>
+            </p>
+            <p>Jika dijalankan maka hasilnya akan seperti ini :</p>
+            <div class="jquery">
+                <img src="images/jquery2.png" alt="">
+            </div><br>
+            <p>
+                Dengan fungsi $("#result").load(), kita bisa mengambil data dengan AJAX dan langsung menampilkannya pada elemen yang dipilih. Fungsi JQuery load() cocoknya untuk mengambil bagian dari HTML untuk ditampilkan. 
+            </p>
+            <h3>AJAX menggunakan Fetch API</h3>
+            <p>
+                Fetch artinya mengambil. Metode fetch bisa jadi alternatif untuk AJAX. Methode ini mulai hadir pada Javascript versi ES6. Perbedaanya dengan XMLHttpRequest dan JQuery adalah:
+                <ul style="list-style: disc;">
+                    <li>Fetch akan mengembalikan sebuah promise.</li>
+                    <li>Secara bawaan (default), fetch tidak akan mengirim atau menerima cookie dari server.</li>
+                    <li>Fetch dapat digunakan di web browser dan juga Nodejs dengan modul node-fetch.</li>
+                </ul>
+                <p>Berikut adalah syntax dasar penggunaan Fetch.</p>
+                <div class="fetch">
+                    <img src="images/fetch.png" alt="">
+                </div><br>             
+            </p>
+            <h3>AJAX menggunakan Axios</h3>
+            <p>
+                Axios hampir sama seperti fetch. Bedanya Axios adalah sebuah library sedangkan fetch adalah API yang tersedia di web browser. Axios juga sama-sama bisa digunakan di web browser dan Nodejs.
+                Contoh AJAX dengan Axios:
+                <div class="axios">
+                    <img src="images/fetch.png" alt="">
+                </div><br>                
+            </p>
+        </section><br><br><br><br>
+    <section>
+        <div class="quiz" id="2">
+            <h2>QUIZ</h2>
+            <p>
+                Setelah mempelajari materi javascript diatas sekarang saatnya kita menguji pengetahuan dan
+                pemahaman kita dengan menjawab soal dibawah ini. <br>
+                GOOD LUCK &#128521;
+            </p>
+        <form >
+        <ol>
+            <li>
+                Javascript diperkenalkan pertama kali oleh Netscape pada tahun …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" /> 1994 <br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" /> 1995<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" /> 1996<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" /> 1997<br>
+            </li><br>
+            <li>
+                JavaScript ini berlaku …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" /> Desktop<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" /> Mobile<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" /> Web<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" /> Semua platform<br>
+            </li><br>
+            <li>
+                Manakah dari pernyataan berikut yang benar tentang JavaScript...<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />Ini adalah bahasa scripting yang digunakan untuk membuat situs web interaktif<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />Ini adalah versi lanjutan dari Java untuk pengembangan aplikasi Desktop dan Seluler<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />Ini adalah bahasa markup Java untuk mengembangkan halaman web<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />Semua yang di atas<br>  
+            </li><br>
+            <li>
+                Kode JavaScript dapat ditulis dalam ...<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />File JavaScript (file .js)<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />dokumen HTML secara langsung<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />file JavaScript dan dalam dokumen HTML secara langsung<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />Di lembar gaya (file .css)<br>  
+            </li><br>
+            <li>
+                Untuk memasukkan koding JavaScript ke dalam pemrograman web dengan menggunakan …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" /> script type=”text/javascript”<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" /> script type=”text/css”<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" /> script type=”text/vbscript”<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" /> script type=”text/typescript”<br>
+            </li><br>
+            <li>
+                Di bawah ini merupakan tag javascript yang dapat disisipkan pada dokumen HTML <br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" /> js <br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" /> javascript <br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" /> script <br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" /> jquery <br>
+            </li><br>
+            <li>
+                var slot = “234” yang bertipe data …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" /> Integer<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" /> Double<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" /> string<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" /> Object<br>
+            </li><br>
+            <li>
+                Console.log merupakan kode perintah yang berfungsi untuk …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />Menampilkan desain UI di web console.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />Menampilkan hasil program di web console.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />Menampilkan teks di web console.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />Menampilkan notifikasi di web console.<br>  
+            </li><br>
+            <li>
+                Di bawah adalah syntax javascript untuk mengambil elemen HTML secara spesifik pada atribut ID <br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" /> document.getElementById(“demo”); <br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" /> document.getElementByName(“demo”);<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />  document.getElementsByClassName(“demo”);<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" /> document.getElementsByTagName(“demo”); <br>
+            </li><br>
+            <li>
+                Kita dapat menambahkan sintak javascript dalam dokumen HTML pada bagian <br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" /> di dalam tag head <br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" /> di dalam tag body <br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" /> Bisa di dalam tag head maupun body <br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" /> Tidak bisa keduanya <br>
+            </li><br>
+            <li>
+                != dibaca …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />Sama dengan<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />Lebih besar<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />Lebih kecil<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />Tidak sama dengan<br>  
+            </li><br>
+            <li>
+                “if(!jawaban = null)” dibaca …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />Jika isi jawaban itu kosong / null.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />Jika isi jawaban tidak kosong / null.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />Jika variabel jawaban tidak ditemukan.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />Jika variabel jawaban ditemukan.<br>  
+            </li><br>
+            <li>
+                JavaScript yang digunakan sebagai server-side ialah …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />AngularJS<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />ReactJS<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />VueJS<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />NodeJS<br>  
+            </li><br>
+            <li>
+                JQuery yang merupakan tools JavaScript yang digunakan untuk …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />Mempercantik tampilan UI pada website.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />Integrasi ke bagian server.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" /> Integrasi ke bagian library.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />Mempercepat proses eksekusi program.<br>  
+            </li><br>
+            <li>
+                Fungsi dari AJAX ialah …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />Melakukan update data tanpa reload halaman web.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />Memperbaiki typo pada pengetikan koding di text editor.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />Mempercantik tampilan website.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />Mempercepat proses eksekusi program.<br>  
+            </li><br>
+            <li>
+                AJAX dapat dilakukan pada saat …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />Mengirim data ke server tanpa reload web.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />Menampilkan perubahan data secara otomatis.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />Menampilkan kotak masuk secara otomatis.<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />Semua Benar.<br>  
+            </li><br>
+            <li>
+                Berikut yang bukan termasuk Tools yang menyediakan JavaScript ialah …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />NetBeans<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />Visual Studio<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />Adobe Dreamweaver<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />PHPRaid<br>  
+            </li><br>
+            <li>
+                Berikut yang bukan termasuk kode perintah perulangan ialah …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />Each<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />For<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />While<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />Do While<br>  
+            </li><br>
+            <li>
+                Berikut contoh komentar yang benar di dalam JavaScript adalah …<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />// Sedang belajar. //<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />/* Sedang belajar. */<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />/* Sedang belajar. /*<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />Sedang belajar. //<br>  
+            </li><br>
+            <li>
+                Metode JavaScript mana yang digunakan untuk menulis ke kotak peringatan...<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="a" />window.alertHTML()<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="b" />jendela.peringatan()<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="c" />jendela.alertBox()<br>
+                <input onclick="Engine(2, this.value)" type="radio" value="d" />jendela.alertContent()<br>  
+            </li><br>
+        </ol>
+        </form>
+    </section>  
+    </div>
+    </div>
+    </div>
+    </article>                  
+           <div class="contact" id="3">
+            <h2>About Us</h2>
+            <section>
+                <h3>22753107-ViviApriliani.netlify.app</h3>
+                <p>Website ini dibuat dengan tujuan menjadi tempat pembelajaran yang mudah dipahami oleh berbagai kalangan</p>
+            </section>
+            <section>
+                <h3>Siapa Founder Website ini?</h3>
+                <p>
+                    Hi 👋 perkenalkan, saya Vivi Apriliani. Bisa dipanggil Vivi. Seorang mahasiswa yang sedang menempuh pendidikan di Politeknik Negeri Lampung Program Studi Management Informatika. 
+                </p>
+            </section>
+                    <h1 style="text-align: left;margin-left: 40px;font-size: 50px;">Contact Me</h1>
+                    <p style="text-align: left;margin-left: 45px;font-family: Times New Roman;"><b>Email  :</b> 
+                    <br><textarea rows="1" cols="28" name="email">aprilianivivi773@gmail.com</textarea>
+                    </p>
+                    <p style="text-align: left;margin-left: 45px;font-family: Times New Roman;"><b>Pesan  :</b> 
+                    <br><textarea rows="4" cols="40" name="pesan">Tinggalkan pesan anda disini</textarea>
+                    </p>
+                    <br>
+                    <a href="mailto:aprilianivivi773@gmail.com" title="Click Here for Send Email to Me"><button>Send</button></a>
+            </div>
+        <aside>
+        <div class="socialmedia">
+            <ul>
+                <li><a href="#"><img src="images/ig.png" alt="My Instagram account"></a></li>
+                <li><a href="#"><img src="images/fb.png" alt="My Facebook account"></a></li>
+                <li><a href="#"><img src="images/yt.png" alt="My Youtube account"></a></li>
+            </ul>
+        </div>
+    </aside>
+    </main>
+ <footer>
+    <hr style="width:100%;text-align: center;">
+                <p style="text-align: center;font-size: 15px;"> Copyright &copy; 2023 Created @ <b>Vivi Apriliani &#127752;</b></p>
+ </footer>
+</body>
+</html>
